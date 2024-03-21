@@ -1,0 +1,115 @@
+/* Set some basic styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #cfd8dc; /* 4 */
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex; /* 1 */
+  justify-content: space-between; /* 2 */
+  padding: 0 2rem; /* 3 */
+  background: #cfd8dc; /* 4 */
+}
+
+nav ul {
+  display: flex; /* 5 */
+  list-style: none; /* 6 */
+}
+
+li {
+  padding-left: 1rem; /* 7! */
+  padding: 1rem; /* 3 */
+}
+
+h2 {
+  padding: 0.5rem; /* 3 */
+}
+
+a {
+  text-decoration: none;
+  color: #0d47a1
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+textarea{
+  width: 100%;
+  height: 4rem;
+  padding: 0.2rem;
+}
+
+input {
+  width: auto;
+  padding: 0.2rem;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+button {
+  margin: 0.5rem;
+  background-color: #1f3247;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+div {
+  border-color: #1f3247;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  nav li {
+    padding: 0.5rem 0;
+  }
+} 
